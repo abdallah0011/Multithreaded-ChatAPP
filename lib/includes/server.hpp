@@ -17,7 +17,7 @@
 
 namespace TCP{
 
-    class Server: protected Socket{
+    class Server: protected virtual Socket{
     protected:
         // Server
         uint16_t m_connectionSize = MAXCLIENTS;

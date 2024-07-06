@@ -12,7 +12,7 @@
 
 namespace TCP{
 
-    class Client: protected Socket{
+    class Client: protected virtual Socket{
         protected:
             // Client
             void createConnection();
