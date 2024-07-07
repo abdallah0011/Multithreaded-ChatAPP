@@ -2,8 +2,7 @@
 
 #clean
 echo "============CLEANING============"
-rm -rf build
-rm -rf run
+rm -rf build run
 echo "==============DONE=============="
 
 #build

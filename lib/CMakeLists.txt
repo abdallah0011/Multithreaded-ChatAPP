@@ -1,20 +1,25 @@
 cmake_minimum_required(VERSION 3.22)
 project(MultithrededChatAPPLibrary)
 
-set(SOURCES
-    src/socket.cpp
-    src/client.cpp
-    src/server.cpp
-    src/user.cpp)
+file(GLOB SOURCES
+    src/*.cpp)
 
-set(HEADERS
-    includes/socket.hpp
-    includes/client.hpp
-    includes/server.hpp
-    includes/user.hpp)
+file(GLOB HEADERS
+    includes/*.hpp)
 
-include_directories(includes/)
+# set(SOURCES
+#     src/socket.cpp
+#     src/client.cpp
+#     src/server.cpp
+#     src/user.cpp)
+
+# set(HEADERS
+#     includes/socket.hpp
+#     includes/client.hpp
+#     includes/server.hpp
+#     includes/user.hpp)
+
+include_directories(includes)
 
 add_library(TCPlib STATIC ${SOURCES} ${HEADERS})
-
 
